@@ -5,7 +5,7 @@ const defaultName = outputRef.textContent;
 inputRef.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-  inputRef.value.length === 0
+  event.currentTarget.value.length === 0
     ? (outputRef.textContent = defaultName)
     : (outputRef.textContent = event.currentTarget.value);
 }
