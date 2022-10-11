@@ -22,14 +22,3 @@ function onFormSubmit(event) {
   console.log(formData);
   formRef.reset();
 }
-
-//   const formData = new FormData(event.currentTarget);
-
-//   const formProps = Object.fromEntries(formData); // створюємо реальний обєкт з даними форми, щоб була можливість перервати ітерацію по ньому і не виводити алерт двічі, якщо обидва інпута пусті
-
-//   for (const value of Object.values(formProps)) {
-//     if (!value) {
-//       alert('Please fill all fields');
-//       return;
-//     }
-//   }
