@@ -10,7 +10,7 @@ const colorChangeBtnRef = document.querySelector('button.change-color');
 
 colorChangeBtnRef.addEventListener('click', onButtonClick);
 
-function onButtonClick(event) {
+function onButtonClick() {
   bodyRef.style.backgroundColor = getRandomHexColor();
   colorTextRef.textContent = bodyRef.style.backgroundColor;
 }
